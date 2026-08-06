@@ -6,15 +6,16 @@
     <meta name="google-site-verification" content="ROuLwwNijKdRo_65m4JmTtX6GZNgxSnNUNWz2Qk-FyA" />
     
     <!-- Пошукові SEO Метатеги -->
-    <title>Нерегулярні пасажирські перевезення Львів — Оренда автобуса | Bus Travel Lviv</title>
+    <title>Bus Travel Lviv — Нерегулярні пасажирські перевезення та оренда автобусів</title>
     <meta name="description" content="Нерегулярні пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по всій Україні. ФОП Кицак М.С. — офіційний перевізник із ліцензією.">
     <meta name="keywords" content="нерегулярні перевезення, оренда автобуса львів, трансфер автобус, тури в карпати, замовлення автобуса львів, пасажирські перевезення по україні">
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:site_name" content="BUS_TRAVEL_LVIV">
-    <meta property="og:title" content="BUS_TRAVEL_LVIV | Оренда автобусів Львів">
+    <!-- Open Graph Meta Tags (Для Google та соцмереж) -->
+    <meta property="og:site_name" content="Bus Travel Lviv">
+    <meta property="og:title" content="Bus Travel Lviv | Оренда автобусів та перевезення Львів">
     <meta property="og:description" content="Нерегулярні пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по всій Україні.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/">
 
     <!-- Tailwind CSS та FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,12 +32,23 @@
         }
     </style> 
 
-    <!-- Schema.org -->
+    <!-- Schema.org 1: Вказівка Назви Сайту для Google (Прибирає "GitHub Pages documentation") -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bus Travel Lviv",
+      "alternateName": ["Пасажирські перевезення Львів", "ФОП Кицак М.С."],
+      "url": "https://bus-travel-lviv.github.io/bus-travel-lviv-/"
+    }
+    </script>
+
+    <!-- Schema.org 2: Бізнес-послуги -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BusReservation",
-      "name": "BUS_TRAVEL_LVIV",
+      "name": "Bus Travel Lviv",
       "description": "Нерегулярні пасажирські перевезення по Україні та Європі, оренда автобусів у Львові.",
       "telephone": "+380631480642",
       "areaServed": "Lviv",
@@ -137,7 +149,7 @@
         </div>
     </section>
 
-    <!-- Форма Розрахунку (Пункт 5) -->
+    <!-- Форма Розрахунку -->
     <section id="calc" class="py-16 px-4 max-w-4xl mx-auto">
         <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-10 rounded-3xl border border-yellow-500/30 glow-yellow relative">
             <div class="text-center mb-8">
@@ -146,105 +158,96 @@
                 <p class="text-gray-400 text-sm mt-2">Заповніть форму, і ми повідомимо точну ціну без прихованих комісій</p>
             </div>
 
-  <form action="https://formsubmit.co/maks.27082016@gmail.com" method="POST" class="space-y-4">
-    <!-- Налаштування відправки -->
-    <input type="hidden" name="_next" value="https://bustravel.lviv.ua">
-    <input type="hidden" name="_subject" value="🚌 Нова заявка на розрахунок! (Bus Travel Lviv)">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
+            <form action="https://formsubmit.co/maks.27082016@gmail.com" method="POST" class="space-y-4">
+                <!-- Налаштування відправки -->
+                <input type="hidden" name="_next" value="https://bus-travel-lviv.github.io/bus-travel-lviv-/">
+                <input type="hidden" name="_subject" value="🚌 Нова заявка на розрахунок! (Bus Travel Lviv)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-            <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Маршрут (Звідки - Куди)</label>
-            <input type="text" name="Маршрут" placeholder="напр. Львів — Буковель" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
-        </div>
-        <div>
-            <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Дата поїздки</label>
-            <input type="date" name="Дата_поїздки" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-yellow-500 transition text-sm">
-        </div>
-    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Маршрут (Звідки - Куди)</label>
+                        <input type="text" name="Маршрут" placeholder="напр. Львів — Буковель" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Дата поїздки</label>
+                        <input type="date" name="Дата_поїздки" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-            <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Кількість пасажирів</label>
-            <input type="number" name="Кількість_пасажирів" placeholder="напр. 25" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
-        </div>
-        <div>
-            <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Номер телефону</label>
-            <input type="tel" name="Телефон" placeholder="+380..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
-        </div>
-    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Кількість пасажирів</label>
+                        <input type="number" name="Кількість_пасажирів" placeholder="напр. 25" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Номер телефону</label>
+                        <input type="tel" name="Телефон" placeholder="+380..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                </div>
 
-    <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-4 px-6 rounded-xl transition shadow-lg shadow-yellow-500/20 flex items-center justify-center gap-2 text-base mt-4">
-        <i class="fa-solid fa-paper-plane"></i> Отримати точний розрахунок
-    </button>
-</form>
-
-
+                <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-4 px-6 rounded-xl transition shadow-lg shadow-yellow-500/20 flex items-center justify-center gap-2 text-base mt-4">
+                    <i class="fa-solid fa-paper-plane"></i> Отримати точний розрахунок
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Автопарк -->
-    <!-- Автопарк -->
-<section id="fleet" class="py-16 px-4 max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-        <span class="inline-flex items-center gap-2 bg-yellow-500/10 text-yellow-500 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3 border border-yellow-500/20">
-            <i class="fa-solid fa-bus text-base"></i>
-            Наш автопарк
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Автобус MAN (35+1 місць)</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">Ідеальний вибір для туристичних поїздок, пасажирських перевезень, трансферів та обслуговування заходів.</p>
-    </div>
-
-    <!-- Галерея -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Фото 1 -->
-        <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
-            <img src="fleet/IMG_3750.jpeg" alt="Автобус MAN 35+1 місць" class="w-full h-64 object-cover">
-            <div class="p-4 border-t border-gray-800">
-                <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
-                <p class="text-xs text-gray-500">Зовнішній вигляд та місткий багажник</p>
-            </div>
+    <section id="fleet" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="inline-flex items-center gap-2 bg-yellow-500/10 text-yellow-500 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3 border border-yellow-500/20">
+                <i class="fa-solid fa-bus text-base"></i>
+                Наш автопарк
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Автобус MAN (35+1 місць)</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">Ідеальний вибір для туристичних поїздок, пасажирських перевезень, трансферів та обслуговування заходів.</p>
         </div>
 
-        <!-- Фото 2 -->
-        <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
-            <img src="fleet/IMG_3751.jpeg" alt="Автобус MAN 35+1 місць - салон" class="w-full h-64 object-cover">
-            <div class="p-4 border-t border-gray-800">
-                <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
-                <p class="text-xs text-gray-500">Комфортабельний салон та зручні сидіння</p>
+        <!-- Галерея -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3750.jpeg" alt="Автобус MAN 35+1 місць Львів" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Зовнішній вигляд та місткий багажник</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3751.jpeg" alt="Автобус MAN 35+1 місць - салон" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Комфортабельний салон та зручні сидіння</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3752.jpeg" alt="Автобус MAN 35+1 місць - вид спереду" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Чистий та доглянутий транспорт</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3755.jpeg" alt="Автобус MAN 35+1 місць - інтер'єр" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Просторий салон, клімат-контроль / кондиціонер</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3756.jpeg" alt="Автобус MAN 35+1 місць - виїзд" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Готовий до міжміських та міських поїздок</p>
+                </div>
             </div>
         </div>
-
-        <!-- Фото 3 -->
-        <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
-            <img src="fleet/IMG_3752.jpeg" alt="Автобус MAN 35+1 місць - вид спереду" class="w-full h-64 object-cover">
-            <div class="p-4 border-t border-gray-800">
-                <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
-                <p class="text-xs text-gray-500">Чистий та доглянутий транспорт</p>
-            </div>
-        </div>
-
-        <!-- Фото 4 -->
-        <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
-            <img src="fleet/IMG_3755.jpeg" alt="Автобус MAN 35+1 місць - інтер'єр" class="w-full h-64 object-cover">
-            <div class="p-4 border-t border-gray-800">
-                <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
-                <p class="text-xs text-gray-500">Просторий салон, клімат-контроль / кондиціонер</p>
-            </div>
-        </div>
-
-        <!-- Фото 5 -->
-        <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
-            <img src="fleet/IMG_3756.jpeg" alt="Автобус MAN 35+1 місць - виїзд" class="w-full h-64 object-cover">
-            <div class="p-4 border-t border-gray-800">
-                <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
-                <p class="text-xs text-gray-500">Готовий до міжміських та міських поїздок</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Послуги -->
     <section id="services" class="py-16 px-4 max-w-7xl mx-auto">
@@ -350,4 +353,3 @@
 
 </body>
 </html>
-
