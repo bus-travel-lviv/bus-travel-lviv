@@ -40,7 +40,7 @@
         }
     </style> 
 
-    <!-- SCHEMA 1: Ідентифікація сайту (Прибирає "GitHub Pages documentation") -->
+    <!-- SCHEMA 1: Ідентифікація сайту -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,7 +51,7 @@
     }
     </script>
 
-    <!-- SCHEMA 2: Професійна мікророзметка локального бізнесу (LocalBusiness / TransportationService) -->
+    <!-- SCHEMA 2: Професійна мікророзметка локального бізнесу -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -99,7 +99,7 @@
     }
     </script>
 
-    <!-- SCHEMA 4: Розширені відповіді FAQ для сніпета Google (FAQPage) -->
+    <!-- SCHEMA 4: FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -139,7 +139,7 @@
     <header class="fixed w-full z-50 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 py-3.5 flex justify-between items-center gap-2">
             <!-- Логотип -->
-            <a href="#" class="text-xl sm:text-2xl font-black tracking-wider text-yellow-500 hover:text-yellow-400 transition whitespace-nowrap">
+            <a href="#" class="text-base sm:text-2xl font-black tracking-wider text-yellow-500 hover:text-yellow-400 transition whitespace-nowrap">
                 BUS_TRAVEL_LVIV
             </a>
 
@@ -152,16 +152,16 @@
                 <a href="#contacts" class="hover:text-yellow-500 transition">Контакти</a>
             </nav>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
                 <!-- Кнопка виклику -->
-                <a href="tel:+380631480642" class="bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-2 px-3.5 sm:px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm shadow-lg shadow-yellow-500/20 whitespace-nowrap">
+                <a href="tel:+380631480642" class="bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-2 px-3 rounded-xl transition duration-300 flex items-center justify-center gap-1.5 text-xs sm:text-sm shadow-lg shadow-yellow-500/20 whitespace-nowrap">
                     <i class="fa-solid fa-phone"></i> 
                     <span class="hidden sm:inline">063 148 06 42</span>
                     <span class="sm:hidden">Дзвінок</span>
                 </a>
 
                 <!-- Кнопка-гамбургер (Тільки для мобільних) -->
-                <button id="menu-btn" aria-label="Відкрити меню" class="md:hidden text-gray-300 hover:text-yellow-500 text-2xl p-1 focus:outline-none transition">
+                <button id="menu-btn" aria-label="Відкрити меню" class="md:hidden text-yellow-500 hover:text-yellow-400 text-xl p-2 rounded-xl border border-yellow-500/30 bg-gray-900 focus:outline-none transition flex-shrink-0">
                     <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </button>
             </div>
@@ -187,7 +187,7 @@
             </div>
 
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-4 leading-tight">
-                Комфортні пасажирські перевезення <span class="text-yellow-500">зі Львова</span>
+                Комфортні пасажирські перевезення <span class="text-yellow-500">зи Львова</span>
             </h1>
 
             <p class="text-gray-400 text-base sm:text-xl max-w-xl mb-8">
@@ -436,7 +436,7 @@
         <p>© Bus Travel Lviv • ФОП Кицак М.С. • Пасажирські перевезення Львів, Україна</p>
     </footer>
 
-    <!-- Плаваюча мобільна панель -->
+    <!-- Плаваюча мобільна панель знизу -->
     <div class="fixed bottom-0 left-0 right-0 bg-gray-950/95 border-t border-gray-800 p-3 sm:hidden z-50 flex justify-around items-center gap-2 backdrop-blur">
         <a href="tel:+380631480642" class="flex-1 bg-yellow-500 text-black font-black py-2.5 rounded-xl text-center text-sm flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20">
             <i class="fa-solid fa-phone"></i> Зателефонувати
@@ -456,6 +456,7 @@
         const menuIcon = document.getElementById('menu-icon');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
+        // Відкриття / закриття меню при натисканні на ☰
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             if (mobileMenu.classList.contains('hidden')) {
@@ -467,6 +468,7 @@
             }
         });
 
+        // Автоматичне закриття меню при натисканні на будь-яке посилання
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
