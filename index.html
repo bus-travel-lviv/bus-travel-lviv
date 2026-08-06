@@ -5,181 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ROuLwwNijKdRo_65m4JmTtX6GZNgxSnNUNWz2Qk-FyA" />
     
-    <!-- Основні SEO Метатеги -->
-    <title>Bus Travel Lviv — Пасажирські перевезення та оренда автобусів Львів</title>
-    <meta name="description" content="Нерегулярні пасажирські перевезення та оренда комфортабельних автобусів MAN у Львові, по Україні та Європі. ФОП Кицак М.С. — офіційний перевізник.">
-    <meta name="keywords" content="нерегулярні перевезення львів, оренда автобуса львів, замовлення автобуса львів, пасажирські перевезення по україні, тури в карпати автобус, трансфер львів, оренда man львів">
-    <meta name="author" content="ФОП Кицак М.С.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Гео-прив'язка -->
-    <meta name="geo.region" content="UA-46">
-    <meta name="geo.placename" content="Lviv">
-    <meta name="geo.position" content="49.839683;24.029717">
-    <meta name="ICBM" content="49.839683, 24.029717">
-
-    <!-- Open Graph -->
+    <!-- Пошукові SEO Метатеги -->
+    <title>Bus Travel Lviv — Нерегулярні пасажирські перевезення та оренда автобусів</title>
+    <meta name="description" content="Нерегулярні пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по всій Україні. ФОП Кицак М.С. — офіційний перевізник із ліцензією.">
+    <meta name="keywords" content="нерегулярні перевезення, оренда автобуса львів, трансфер автобус, тури в карпати, замовлення автобуса львів, пасажирські перевезення по україні">
+    
+    <!-- Open Graph Meta Tags (Для Google та соцмереж) -->
     <meta property="og:site_name" content="Bus Travel Lviv">
     <meta property="og:title" content="Bus Travel Lviv | Оренда автобусів та перевезення Львів">
-    <meta property="og:description" content="Пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по Україні. Офіційно.">
+    <meta property="og:description" content="Нерегулярні пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по всій Україні.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/">
-    <meta property="og:image" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/logo.png">
-    <meta property="og:locale" content="uk_UA">
 
-    <!-- CSS & Fonts -->
+    <!-- Tailwind CSS та FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         html { scroll-behavior: smooth; }
-        .glow-gold { box-shadow: 0 0 35px rgba(234, 179, 8, 0.15); }
-        .glow-gold-lg { box-shadow: 0 0 50px rgba(234, 179, 8, 0.25); }
+        .glow-yellow {
+            box-shadow: 0 0 30px rgba(234, 179, 8, 0.2);
+        }
         .bg-grid {
-            background-image: radial-gradient(rgba(234, 179, 8, 0.05) 1px, transparent 1px);
-            background-size: 32px 32px;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
         }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FDE047 0%, #EAB308 50%, #CA8A04 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .glass-card {
-            background: rgba(17, 24, 39, 0.4);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(234, 179, 8, 0.1);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            border: 1px solid rgba(234, 179, 8, 0.4);
-            box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
-        }
+    </style> 
 
-        /* Стилі для повноекранної анімації логотипу при вході */
-        #preloader {
-            position: fixed;
-            inset: 0;
-            z-index: 99999;
-            background-color: #030712;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
-        }
-        #preloader.preloader-hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .logo-animated {
-            animation: logoPulse 2s infinite ease-in-out;
-        }
-        @keyframes logoPulse {
-            0% {
-                transform: scale(0.92);
-                filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.2));
-            }
-            50% {
-                transform: scale(1.03);
-                filter: drop-shadow(0 0 40px rgba(234, 179, 8, 0.6));
-            }
-            100% {
-                transform: scale(0.92);
-                filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.2));
-            }
-        }
-    </style>
+    <!-- Schema.org 1: Вказівка Назви Сайту для Google (Прибирає "GitHub Pages documentation") -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bus Travel Lviv",
+      "alternateName": ["Пасажирські перевезення Львів", "ФОП Кицак М.С."],
+      "url": "https://bus-travel-lviv.github.io/bus-travel-lviv-/"
+    }
+    </script>
+
+    <!-- Schema.org 2: Бізнес-послуги -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BusReservation",
+      "name": "Bus Travel Lviv",
+      "description": "Нерегулярні пасажирські перевезення по Україні та Європі, оренда автобусів у Львові.",
+      "telephone": "+380631480642",
+      "areaServed": "Lviv",
+      "serviceType": ["Оренда автобуса", "Пасажирські перевезення", "Трансфер"]
+    }
+    </script>
 </head>
-<body class="bg-gray-950 text-gray-100 font-sans antialiased pb-20 sm:pb-0 bg-grid selection:bg-yellow-500 selection:text-black">
+<body class="bg-gray-950 text-gray-100 font-sans antialiased pb-16 sm:pb-0 bg-grid">
 
-    <!-- ПОКРАЩЕНИЙ АНІМОВАНИЙ ВХІДНИЙ ЕКРАН (PRELOADER) -->
-    <div id="preloader">
-        <div class="relative max-w-[280px] sm:max-w-xs p-4 flex flex-col items-center">
-            <div class="absolute inset-0 bg-yellow-500/20 rounded-full blur-3xl animate-pulse"></div>
-            
-            <!-- Виправлений шлях до логотипу з урахуванням кореня -->
-            <img src="logo.png" alt="Bus Travel Lviv Logo" class="relative z-10 w-full h-auto rounded-full border-2 border-yellow-500/30 shadow-2xl logo-animated">
-            
-            <div class="mt-8 flex items-center gap-2 z-10">
-                <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-bounce" style="animation-delay: 0s"></span>
-                <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
-                <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Преміальна Шапка (Header) з Навігацією -->
-    <header class="fixed w-full z-50 bg-gray-950/80 backdrop-blur-xl border-b border-yellow-500/10 shadow-2xl shadow-black/50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2.5 group">
-                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-yellow-500 to-amber-300 flex items-center justify-center text-black font-black text-lg shadow-md shadow-yellow-500/20 group-hover:scale-105 transition duration-300">
-                    B
-                </div>
-                <span class="text-xl sm:text-2xl font-black tracking-widest text-white">
-                    BUS_TRAVEL_<span class="gold-gradient-text">LVIV</span>
-                </span>
+    <!-- Шапка (Header) -->
+    <header class="fixed w-full z-50 bg-gray-950/85 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-3.5 flex justify-between items-center gap-2">
+            <a href="#" class="text-xl sm:text-2xl font-black tracking-wider text-yellow-500 hover:text-yellow-400 transition whitespace-nowrap">
+                BUS_TRAVEL_LVIV
             </a>
-
-            <nav class="hidden md:flex items-center gap-7 text-xs uppercase font-extrabold tracking-widest text-gray-300">
-                <a href="#calc" class="hover:text-yellow-400 transition hover:scale-105 py-1 relative group">Розрахунок</a>
-                <a href="#fleet" class="hover:text-yellow-400 transition hover:scale-105 py-1 relative group">Автопарк</a>
-                <a href="#services" class="hover:text-yellow-400 transition hover:scale-105 py-1 relative group">Послуги</a>
-                <a href="#contacts" class="hover:text-yellow-400 transition hover:scale-105 py-1 relative group">Контакти</a>
-            </nav>
-
-            <a href="tel:+380631480642" class="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-400 hover:brightness-110 text-black font-black py-2.5 px-5 rounded-full transition duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm shadow-lg shadow-yellow-500/20 active:scale-95 whitespace-nowrap">
-                <i class="fa-solid fa-phone text-xs"></i> 
-                <span>063 148 06 42</span>
+            <div class="hidden md:flex gap-6 text-sm font-semibold">
+                <a href="#calc" class="hover:text-yellow-500 transition">Розрахунок</a>
+                <a href="#fleet" class="hover:text-yellow-500 transition">Автопарк</a>
+                <a href="#services" class="hover:text-yellow-500 transition">Послуги</a>
+                <a href="#faq" class="hover:text-yellow-500 transition">Запитання</a>
+                <a href="#contacts" class="hover:text-yellow-500 transition">Контакти</a>
+            </div>
+            <a href="tel:+380631480642" class="bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-2 px-4 rounded-xl transition duration-300 flex items-center gap-2 text-xs sm:text-sm shadow-lg shadow-yellow-500/20 whitespace-nowrap">
+                <i class="fa-solid fa-phone"></i> 063 148 06 42
             </a>
         </div>
     </header>
 
-    <section class="relative pt-48 sm:pt-40 pb-20 px-4 text-center overflow-hidden">
-        <div class="max-w-5xl mx-auto flex flex-col items-center">
-            <div class="inline-flex items-center gap-2.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-5 py-2 rounded-full text-xs font-semibold mb-8">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span> 
-                Приймаємо замовлення 24/7
+    <!-- Головний екран (Hero) -->
+    <section class="relative pt-32 pb-12 px-4 text-center overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            
+            <!-- Індикатор доступності -->
+            <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-6 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Приймаємо замовлення на міжміські та міські рейси
             </div>
 
-            <h1 class="text-4xl sm:text-6xl font-black text-white mb-6">
-                Пасажирські перевезення <br><span class="gold-gradient-text">зі Львова</span>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-4 leading-tight">
+                Комфортні пасажирські перевезення <span class="text-yellow-500">зі Львова</span>
             </h1>
 
-            <p class="text-gray-400 text-lg max-w-3xl mb-10">
-                Оренда автобусів MAN від 20 місць по Україні та Європі. ФОП Кицак М.С.
+            <p class="text-gray-400 text-base sm:text-xl max-w-xl mb-8">
+                Нерегулярні рейси та оренда автобусів від 20 місць по Україні та Європі. Офіційний перевізник <strong class="text-white">ФОП Кицак М.С.</strong>
             </p>
 
-            <div class="w-full max-w-md mb-12">
-                <img src="logo.png" alt="Bus Travel Lviv" class="rounded-3xl border border-yellow-500/30 object-cover w-full shadow-2xl">
+            <!-- Фото Логотип -->
+            <div class="w-full max-w-sm mb-8 relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                <img src="logo.png.PNG" alt="Bus Travel Lviv" class="relative rounded-2xl border border-gray-800 object-cover w-full">
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-5 w-full max-w-lg mb-10">
-                <a href="tel:+380631480642" class="flex-1 bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-black py-4.5 px-8 rounded-2xl flex items-center justify-center gap-3 text-lg">
+            <!-- Основні кнопки -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md mb-8">
+                <a href="tel:+380631480642" class="flex-1 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-4 px-6 rounded-2xl transition shadow-xl shadow-yellow-500/20 flex items-center justify-center gap-3 text-lg">
                     <i class="fa-solid fa-phone"></i> Зателефонувати
                 </a>
-                <a href="#calc" class="flex-1 bg-gray-900 text-white font-bold py-4.5 px-8 rounded-2xl border border-yellow-500/30 flex items-center justify-center gap-2">
-                    Розрахувати ціну
+                <a href="#calc" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-6 rounded-2xl border border-gray-700 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calculator text-yellow-500"></i> Розрахувати ціну
+                </a>
+            </div>
+
+            <!-- Кнопки месенджерів -->
+            <div class="flex flex-wrap justify-center gap-3 w-full max-w-md">
+                <a href="https://t.me/+380631480642" target="_blank" class="flex-1 min-w-[120px] bg-blue-600/20 border border-blue-500/40 hover:bg-blue-600 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                    <i class="fa-brands fa-telegram text-blue-400 text-lg"></i> Telegram
+                </a>
+                <a href="viber://chat?number=%2B380631480642" class="flex-1 min-w-[120px] bg-purple-600/20 border border-purple-500/40 hover:bg-purple-600 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                    <i class="fa-brands fa-viber text-purple-400 text-lg"></i> Viber
+                </a>
+                <a href="https://wa.me/380631480642" target="_blank" class="flex-1 min-w-[120px] bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-sm">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> WhatsApp
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-950 py-10 border-t border-gray-900 text-center text-gray-600 text-sm">
+    <!-- Цифри та Переваги -->
+    <section class="py-10 border-y border-gray-800/80 bg-gray-900/40">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-3xl sm:text-4xl font-black text-yellow-500">100%</div>
+                <div class="text-xs sm:text-sm text-gray-400 mt-1">Офіційний договір та ліцензія</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-black text-yellow-500">Від 20</div>
+                <div class="text-xs sm:text-sm text-gray-400 mt-1">Посадкових місць у салоні</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-black text-yellow-500">24/7</div>
+                <div class="text-xs sm:text-sm text-gray-400 mt-1">Прийом заявок та підтримка</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-black text-yellow-500">ФОП</div>
+                <div class="text-xs sm:text-sm text-gray-400 mt-1">Готівка та безготівковий розрахунок</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма Розрахунку -->
+    <section id="calc" class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-10 rounded-3xl border border-yellow-500/30 glow-yellow relative">
+            <div class="text-center mb-8">
+                <span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-yellow-500/20">Швидка заявка</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white mt-3">Розрахуйте вартість вашої поїздки</h2>
+                <p class="text-gray-400 text-sm mt-2">Заповніть форму, і ми повідомимо точну ціну без прихованих комісій</p>
+            </div>
+
+            <form action="https://formsubmit.co/maks.27082016@gmail.com" method="POST" class="space-y-4">
+                <!-- Налаштування відправки -->
+                <input type="hidden" name="_next" value="https://bus-travel-lviv.github.io/bus-travel-lviv-/">
+                <input type="hidden" name="_subject" value="🚌 Нова заявка на розрахунок! (Bus Travel Lviv)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Маршрут (Звідки - Куди)</label>
+                        <input type="text" name="Маршрут" placeholder="напр. Львів — Буковель" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Дата поїздки</label>
+                        <input type="date" name="Дата_поїздки" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Кількість пасажирів</label>
+                        <input type="number" name="Кількість_пасажирів" placeholder="напр. 25" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-gray-400 font-bold mb-1 uppercase tracking-wider">Номер телефону</label>
+                        <input type="tel" name="Телефон" placeholder="+380..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 transition text-sm">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-4 px-6 rounded-xl transition shadow-lg shadow-yellow-500/20 flex items-center justify-center gap-2 text-base mt-4">
+                    <i class="fa-solid fa-paper-plane"></i> Отримати точний розрахунок
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Автопарк -->
+    <section id="fleet" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="inline-flex items-center gap-2 bg-yellow-500/10 text-yellow-500 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3 border border-yellow-500/20">
+                <i class="fa-solid fa-bus text-base"></i>
+                Наш автопарк
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Автобус MAN (35+1 місць)</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">Ідеальний вибір для туристичних поїздок, пасажирських перевезень, трансферів та обслуговування заходів.</p>
+        </div>
+
+        <!-- Галерея -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3750.jpeg" alt="Автобус MAN 35+1 місць Львів" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Зовнішній вигляд та місткий багажник</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3751.jpeg" alt="Автобус MAN 35+1 місць - салон" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Комфортабельний салон та зручні сидіння</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3752.jpeg" alt="Автобус MAN 35+1 місць - вид спереду" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Чистий та доглянутий транспорт</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3755.jpeg" alt="Автобус MAN 35+1 місць - інтер'єр" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Просторий салон, клімат-контроль / кондиціонер</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/30 group hover:border-yellow-500/50 transition-all duration-300">
+                <img src="fleet/IMG_3756.jpeg" alt="Автобус MAN 35+1 місць - виїзд" class="w-full h-64 object-cover">
+                <div class="p-4 border-t border-gray-800">
+                    <p class="text-sm font-semibold text-white">Автобус MAN (35+1 місць)</p>
+                    <p class="text-xs text-gray-500">Готовий до міжміських та міських поїздок</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Напрямки Перевезень</h2>
+            <p class="text-gray-400">Обслуговуємо будь-які заходи та маршрути по Україні та Європі</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-mountain text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Тури в Карпати та Закарпаття</h3>
+                <p class="text-gray-400 text-sm">Буковель, Яремче, Славське, термальні басейни та відпочинкові комплекси.</p>
+            </div>
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-graduation-cap text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Шкільні поїздки</h3>
+                <p class="text-gray-400 text-sm">Екскурсії для школярів та студентів із дотриманням усіх вимог безпеки.</p>
+            </div>
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-route text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Трансфери</h3>
+                <p class="text-gray-400 text-sm">Зустріч з вокзалів, готелів, аеропортів чи прикордонних пунктів.</p>
+            </div>
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-champagne-glasses text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Урочистості та весілля</h3>
+                <p class="text-gray-400 text-sm">Пунктуальне обслуговування гостей на святах та ювілеях.</p>
+            </div>
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-briefcase text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Корпоративні виїзди</h3>
+                <p class="text-gray-400 text-sm">Розвозка працівників, семінари, конференції та тимбілдінги.</p>
+            </div>
+            <div class="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition">
+                <i class="fa-solid fa-bus-simple text-3xl text-yellow-500 mb-3"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Нерегулярні рейси</h3>
+                <p class="text-gray-400 text-sm">Індивідуальні пасажирські маршрути за вашим власним графіком.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-white mb-2">Часті запитання</h2>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-gray-900 p-5 rounded-2xl border border-gray-800">
+                <h3 class="font-bold text-white mb-1">Як розраховується вартість оренди?</h3>
+                <p class="text-gray-400 text-sm">Вартість залежить від маршруту (кілометражу при міжміських рейсах) або часу оренди при поїздках по місту.</p>
+            </div>
+            <div class="bg-gray-900 p-5 rounded-2xl border border-gray-800">
+                <h3 class="font-bold text-white mb-1">Чи працюєте ви по безготівковому розрахунку?</h3>
+                <p class="text-gray-400 text-sm">Так, ми працюємо офіційно як ФОП Кицак М.С. і надаємо всі необхідні документи для юридичних осіб.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contacts" class="py-16 px-4 max-w-7xl mx-auto border-t border-gray-800/80">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-white mb-2">Контакти</h2>
+            <p class="text-gray-400">Зв'яжіться з нами зручним для вас способом</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                <i class="fa-solid fa-phone text-2xl text-yellow-500 mb-2"></i>
+                <h3 class="text-sm font-bold text-gray-400 uppercase">Телефон</h3>
+                <a href="tel:+380631480642" class="text-white hover:text-yellow-500 text-xl font-black transition block mt-1">+38 (063) 148-06-42</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                <i class="fa-solid fa-envelope text-2xl text-yellow-500 mb-2"></i>
+                <h3 class="text-sm font-bold text-gray-400 uppercase">Email</h3>
+                <a href="mailto:maks.27082016@gmail.com" class="text-white hover:text-yellow-500 font-bold transition block mt-1 text-sm sm:text-base">maks.27082016@gmail.com</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800">
+                <i class="fa-solid fa-comments text-2xl text-yellow-500 mb-2"></i>
+                <h3 class="text-sm font-bold text-gray-400 uppercase">Месенджери</h3>
+                <p class="text-yellow-500 font-bold mt-1">+38 (063) 148-06-42</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-950 py-8 border-t border-gray-900 text-center text-gray-600 text-sm">
         <p>© Bus Travel Lviv • ФОП Кицак М.С. • Львів, Україна</p>
     </footer>
 
-    <script>
-        window.addEventListener('load', () => {
-            const preloader = document.getElementById('preloader');
-            setTimeout(() => {
-                preloader.classList.add('preloader-hidden');
-            }, 1500);
-        });
-    </script>
+    <!-- Плаваюча мобільна панель -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-950/95 border-t border-gray-800 p-3 sm:hidden z-50 flex justify-around items-center gap-2 backdrop-blur">
+        <a href="tel:+380631480642" class="flex-1 bg-yellow-500 text-black font-black py-2.5 rounded-xl text-center text-sm flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20">
+            <i class="fa-solid fa-phone"></i> Зателефонувати
+        </a>
+        <a href="viber://chat?number=%2B380631480642" class="bg-purple-600 text-white rounded-xl flex items-center justify-center text-lg w-11 h-11">
+            <i class="fa-brands fa-viber"></i>
+        </a>
+        <a href="https://t.me/+380631480642" target="_blank" class="bg-blue-600 text-white rounded-xl flex items-center justify-center text-lg w-11 h-11">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+    </div>
+
 </body>
 </html>
