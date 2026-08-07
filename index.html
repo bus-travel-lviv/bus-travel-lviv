@@ -24,7 +24,7 @@
     <meta property="og:description" content="Пасажирські перевезення та оренда комфортабельних автобусів від 20 місць у Львові та по Україні. Офіційно.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/">
-    <meta property="og:image" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/fleet/IMG_3247.png">
+    <meta property="og:image" content="https://bus-travel-lviv.github.io/bus-travel-lviv-/logo.png.PNG">
     <meta property="og:locale" content="uk_UA">
 
     <!-- CSS & Fonts -->
@@ -59,7 +59,7 @@
             box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
         }
 
-        /* Стилі для повноекранної анімації логотипу при вході */
+        /* Стилі для повноекранної анімації прелоадера */
         #preloader {
             position: fixed;
             inset: 0;
@@ -97,16 +97,16 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased pb-20 sm:pb-0 bg-grid selection:bg-yellow-500 selection:text-black">
 
-    <!-- ПОКРАЩЕНИЙ АНІМОВАНИЙ ВХІДНИЙ ЕКРАН (PRELOADER) -->
+    <!-- ВХІДНИЙ ЕКРАН (ПРЕЛОАДЕР) З ФАЙЛОМ IMG_3247.png -->
     <div id="preloader">
         <div class="relative max-w-[280px] sm:max-w-xs p-4 flex flex-col items-center">
-            <!-- Фоновий неоновий ефект -->
-            <div class="absolute inset-0 bg-yellow-500/20 rounded-full blur-3xl animate-pulse"></div>
+            <!-- Фоновий ефект -->
+            <div class="absolute inset-0 bg-yellow-500/25 rounded-full blur-3xl animate-pulse"></div>
             
-            <!-- Анімований логотип із папки fleet -->
-            <img src="fleet/IMG_3247.png" alt="Bus Travel Lviv Logo" class="relative z-10 w-full h-auto rounded-full border-2 border-yellow-500/30 shadow-2xl logo-animated">
+            <!-- Кругле зображення для анімації -->
+            <img src="IMG_3247.png" alt="Bus Travel Lviv Preloader" class="relative z-10 w-full h-auto rounded-full border-2 border-yellow-500/40 shadow-2xl logo-animated object-cover aspect-square bg-gray-950">
             
-            <!-- Індикатор завантаження під логотипом -->
+            <!-- Індикатор завантаження -->
             <div class="mt-8 flex items-center gap-2 z-10">
                 <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-bounce" style="animation-delay: 0s"></span>
                 <span class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
@@ -115,10 +115,10 @@
         </div>
     </div>
 
-    <!-- Преміальна Шапка (Header) з Навігацією -->
+    <!-- Преміальна Шапка (Header) -->
     <header class="fixed w-full z-50 bg-gray-950/80 backdrop-blur-xl border-b border-yellow-500/10 shadow-2xl shadow-black/50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Логотип -->
+            <!-- Логотип у шапці -->
             <a href="#" class="flex items-center gap-2.5 group">
                 <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-yellow-500 to-amber-300 flex items-center justify-center text-black font-black text-lg shadow-md shadow-yellow-500/20 group-hover:scale-105 transition duration-300">
                     B
@@ -177,7 +177,7 @@
         </div>
     </header>
 
-    <!-- Головний екран (Hero) -->
+    <!-- Головний екран (Hero) з логотипом logo.png.PNG -->
     <section class="relative pt-48 sm:pt-40 pb-20 px-4 text-center overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-yellow-500/10 rounded-full blur-[130px] -z-10"></div>
         
@@ -192,12 +192,13 @@
             </h1>
 
             <p class="text-gray-400 text-lg sm:text-xl max-w-3xl mb-10 leading-relaxed font-normal">
-                Нерегулярні рейси та оренда автобусів від 20 місць по Україні . Офіційний перевізник <strong class="text-white font-bold">ФОП Кицак М.С.</strong>
+                Нерегулярні рейси та оренда автобусів від 20 місць по Україні. Офіційний перевізник <strong class="text-white font-bold">ФОП </strong>
             </p>
 
-            <div class="w-full max-w-md mb-12 relative group">
+            <!-- ЛОГОТИП НА ГОЛОВНОМУ ЕКРАНІ: logo.png.PNG -->
+            <div class="w-full max-w-sm mb-12 relative group">
                 <div class="absolute -inset-2 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-40 transition duration-700"></div>
-                <img src="fleet/IMG_3247.png" alt="Bus Travel Lviv — Пасажирські перевезення" class="relative rounded-3xl border border-yellow-500/30 object-cover w-full shadow-2xl shadow-black/80 group-hover:scale-[1.01] transition duration-500">
+                <img src="logo.png.PNG" alt="Bus Travel Lviv — Логотип" class="relative rounded-3xl border border-yellow-500/30 object-contain w-full shadow-2xl shadow-black/80 group-hover:scale-[1.01] transition duration-500 bg-gray-950">
             </div>
 
             <div class="flex flex-col sm:flex-row gap-5 w-full max-w-lg mb-10">
@@ -264,7 +265,7 @@
             <div class="glass-card rounded-3xl overflow-hidden group">
                 <img src="fleet/IMG_3750.jpeg" alt="Оренда автобуса MAN Львів" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" loading="lazy">
                 <div class="p-5 border-t border-gray-800/80 bg-gray-950/80">
-                    <p class="text-base font-semibold text-white">Автобус MAN </p>
+                    <p class="text-base font-semibold text-white">Автобус MAN</p>
                     <p class="text-xs text-gray-500 mt-1">Вигляд спереду та місткий багажник</p>
                 </div>
             </div>
@@ -442,27 +443,13 @@
         <p>© Bus Travel Lviv • ФОП Кицак М.С. • Пасажирські перевезення Львів, Україна</p>
     </footer>
 
-    <!-- Плаваюча мобільна панель знизу -->
-    <div class="fixed bottom-0 left-0 right-0 bg-gray-950/95 border-t border-yellow-500/20 p-3.5 sm:hidden z-50 flex justify-around items-center gap-2.5 backdrop-blur-xl shadow-2xl shadow-black">
-        <a href="tel:+380631480642" class="flex-1 bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-black py-3 rounded-xl text-center text-sm flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/30 active:scale-95">
-            <i class="fa-solid fa-phone"></i> Зателефонувати
-        </a>
-        <a href="viber://chat?number=%2B380631480642" class="bg-purple-600/30 border border-purple-500/40 text-white rounded-xl flex items-center justify-center text-xl w-12 h-12 active:scale-95 shadow-inner">
-            <i class="fa-brands fa-viber"></i>
-        </a>
-        <a href="https://t.me/+380631480642" target="_blank" rel="noopener" class="bg-blue-600/30 border border-blue-500/40 text-white rounded-xl flex items-center justify-center text-xl w-12 h-12 active:scale-95 shadow-inner">
-            <i class="fa-brands fa-telegram"></i>
-        </a>
-    </div>
-
-    <!-- Скрипт плавного приховування вхідного завантажувача -->
+    <!-- Скрипт для приховування прелоадера після завантаження сторінки -->
     <script>
-        window.addEventListener('load', () => {
+        window.addEventListener('load', function() {
             const preloader = document.getElementById('preloader');
-            // Затримка 2 секунди, щоб відвідувач встиг побачити анімований логотип
-            setTimeout(() => {
+            setTimeout(function() {
                 preloader.classList.add('preloader-hidden');
-            }, 2000);
+            }, 500); // невеликий плавний затримки показ
         });
     </script>
 </body>
