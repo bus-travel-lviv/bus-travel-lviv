@@ -39,7 +39,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Bus Travel Lviv | Оренда автобусів та пасажирські перевезення Львів">
-    <meta property="og:description" content="Оренда автобусів від 20 до 40 місць у Львові та по Україні. Екскурсії, весілля, трансфери, Карпати. Офіційно ФОП.">
+    <meta property="og:description" content="Оренда автобусів від 20 до 50 місць у Львові та по Україні. Екскурсії, весілля, трансфери, Карпати. Офіційно ФОП.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bus-travel-lviv.com.ua/">
     <meta property="og:image" content="https://bus-travel-lviv.com.ua/logo.png.PNG">
@@ -49,9 +49,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Typed.js для ефекту друку тексту -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Typed.js/2.0.12/typed.min.js"></script>
-
     <style>
         html { scroll-behavior: smooth; }
         .glow-gold { box-shadow: 0 0 35px rgba(234, 179, 8, 0.15); }
@@ -154,7 +151,7 @@
 
             <!-- ПРАВА ЧАСТИНА: Рейтинг 5.0 + Телефон -->
             <div class="flex items-center gap-2.5">
-                <!-- Google Рейтинг -->
+                <!-- Google Рейтинг (Одразу видно у верхньому ряду на телефоні) -->
                 <a href="https://maps.google.com" target="_blank" rel="noopener" class="flex items-center gap-1.5 bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/30 px-2.5 py-1.5 rounded-full text-xs transition active:scale-95">
                     <div class="flex text-yellow-400 text-[10px]">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -170,7 +167,7 @@
             </div>
         </div>
 
-        <!-- МОБІЛЬНЕ МЕНЮ -->
+        <!-- МОБІЛЬНЕ МЕНЮ (Тільки посилання без зайвих елементів) -->
         <div class="md:hidden border-t border-yellow-500/10 bg-gray-900/80 backdrop-blur-md py-2 px-3">
             <nav class="flex items-center gap-2 overflow-x-auto no-scrollbar text-xs font-semibold tracking-wide">
                 <a href="#calc" class="bg-gradient-to-r from-yellow-500/20 to-amber-500/10 text-yellow-400 border border-yellow-500/40 py-1.5 px-3 rounded-full flex items-center gap-1.5 whitespace-nowrap active:scale-95">
@@ -192,7 +189,7 @@
         </div>
     </header>
 
-    <!-- Головний екран (Hero) з ефектом друку тексту -->
+    <!-- Головний екран (Hero) з максимальним підняттям вгору -->
     <section class="relative pt-16 sm:pt-24 pb-16 px-4 text-center overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-yellow-500/10 rounded-full blur-[130px] -z-10"></div>
         
@@ -202,10 +199,8 @@
                 Приймаємо замовлення 24/7
             </div>
 
-            <!-- Головний заголовок із динамічним друком -->
             <h1 class="text-3xl sm:text-6xl md:text-7xl font-black tracking-tight text-white mb-4 leading-[1.1]">
-                Комфортні пасажирські перевезення <br>
-                <span class="gold-gradient-text" id="typed-text"></span>
+                 Пасажирські перевезення <br><span class="gold-gradient-text">зі Львова</span>
             </h1>
 
             <p class="text-gray-400 text-sm sm:text-xl max-w-3xl mb-6 leading-relaxed font-normal">
@@ -358,25 +353,12 @@
         <p>© Bus Travel Lviv • ФОП • Пасажирські перевезення Львів, Україна</p>
     </footer>
 
-    <!-- Скрипти (Прелоадер та Анімація друку тексту) -->
     <script>
-        // Прелоадер
         window.addEventListener('load', function() {
             const preloader = document.getElementById('preloader');
             setTimeout(function() {
                 preloader.classList.add('preloader-hidden');
             }, 500);
-        });
-
-        // Анімація друку тексту (Typed.js)
-        document.addEventListener("DOMContentLoaded", function() {
-            new Typed('#typed-text', {
-                strings: ["зі Львова", "по Україні", "у Карпати та Європу"],
-                typeSpeed: 70,
-                backSpeed: 40,
-                backDelay: 2000,
-                loop: true
-            });
         });
     </script>
 </body>
